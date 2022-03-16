@@ -1,0 +1,15 @@
+We have modified the code of the Github repository: https://github.com/allenai/hidden-networks.git 
+Its original license is attached. 
+
+Our modifications include: 
+- an extension of the He parameter initialization scheme by a non-zero bias initialization (which is set as default in the current implementation);
+- pruning of biases together with the network weights;
+- two added model architectures (univ.py), for which we have proven that they contain universal lottery tickets; 
+
+The two MNIST experiments that we have described in the main manuscript can be startet by running
+
+Polynomials:
+python main.py --config path/to/folder/edge-popup/configs/poly.yml --prune-rate 0.5 --initBias "kn-nonzero-bias"
+
+Fourier:
+python main.py --config path/to/folder/edge-popup/configs/fourier.yml --prune-rate 0.5 --initBias "kn-nonzero-bias"
