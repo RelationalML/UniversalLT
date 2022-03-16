@@ -1,0 +1,13 @@
+absl-py
+grpcio
+Markdown
+numpy
+Pillow
+protobuf
+PyYAML
+six
+tensorboard
+torch
+torchvision
+tqdm
+Werkzeug
